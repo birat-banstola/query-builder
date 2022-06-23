@@ -1,0 +1,15 @@
+<div *ngIf="!isConnect" class="text-center" style="background-color: rgba(0,0,255,.3); margin-right: auto; margin-top: auto;
+width: 1000px; height: 255px; margin-left: auto;">
+  <h2>Visual Query Builder</h2>
+  <button type="submit" (click)="showFailure()" style="margin-top: 100px; margin-bottom: 20px; background-color: chartreuse;">Connect to Database</button>
+</div>
+
+<div *ngIf="isConnect" class="text-center" style="background-color: rgba(0,0,255,.3); margin-right: auto; margin-top: auto;
+width: 1000px; margin-left: auto;">
+  <h2>Visual Query Builder</h2>
+  <app-left-menu></app-left-menu>
+  <button type="submit" (click)="showSuccess()" style="margin-top: 100px; margin-bottom: 20px; background-color: chartreuse;">Connect to Database</button>
+</div>
+
+
+

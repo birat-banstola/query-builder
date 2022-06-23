@@ -1,0 +1,48 @@
+<div class="container inline-block-child" style="margin-left: 20px; text-align: left; width=250px;">
+
+<table style="float: left">
+  <tr>
+    <td>
+      <div class="text-center" [ngClass]="{'selected': nodeVal}" (click)="doNodeSelect()">
+        Node <br>
+        <span class="dot"></span>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <div class="text-center" [ngClass]="{'selected': directedVal}" (click)="doDirectedSelect()">
+        Directed Edge <br>
+        <svg height="200" width="200">
+          <defs>
+            <marker id="markerArrow" markerWidth="13" markerHeight="13" refX="2" refY="6"
+                    orient="auto">
+              <path d="M2,2 L2,11 L10,6 L2,2" style="fill: black;" />
+            </marker>
+          </defs>
+
+          <line x1="25" y1="140" x2="150" y2="20" class="arrow" />
+        </svg>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <div class="text-center" [ngClass]="{'selected': undirectedVal}" (click)="doUndirectedSelect()">
+        Undirected Edge <br>
+        <svg height="200" width="200">
+          <line x1="25" y1="140" x2="150" y2="20" class="line"/>
+        </svg>
+      </div>
+    </td>
+  </tr>
+</table>
+  <div class="inline-block-child" style="float: left">
+    <app-canvas></app-canvas>
+  </div>
+  <div class="inline-block-child">
+    <app-db-info></app-db-info>
+  </div>
+</div>
+
+

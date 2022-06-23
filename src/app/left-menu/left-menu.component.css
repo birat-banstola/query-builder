@@ -1,0 +1,30 @@
+table, th, td {
+  border:1px solid black;
+}
+
+.dot {
+  height: 90px;
+  width: 90px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.arrow {
+  stroke:rgb(0,0,0);
+  stroke-width:2;
+  marker-end:url(#markerArrow)
+}
+
+.line {
+  stroke:rgb(0,0,0);
+  stroke-width:2;
+}
+
+.inline-block-child {
+  display: inline-block;
+}
+
+.selected {
+  background-color: aqua;
+}
